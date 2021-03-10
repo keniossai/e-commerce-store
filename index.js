@@ -9,6 +9,7 @@ const app = express()
 config({ cache: process.env.NODE_ENV === 'production' })
 app.use(engine)
 
+app.use(express.static('public'))
 app.set('views', `${__dirname}/resources/views`)
 
 
