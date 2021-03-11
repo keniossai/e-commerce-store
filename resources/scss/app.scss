@@ -44,3 +44,33 @@ section.hero{
 section h6{
     left: 300px;
 }
+
+.btn-primary{
+    background: $primary;
+    transition: all 0.4s ease-in-out;
+
+    &:hover{
+        background: $primary-hover;
+    }
+}
+
+
+section.cart{
+    background: $secondary;
+
+    .amount{
+        color: $primary;
+    }
+}
+
+section.login{
+    background: $secondary;
+    min-height: calc(100vh - 86px);
+
+    a{
+        color: $primary;
+        &:hover{
+            color: $primary-hover;
+        }
+    }
+}

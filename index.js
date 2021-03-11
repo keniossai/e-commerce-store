@@ -18,6 +18,20 @@ app.get('/', (req, res) => {
     res.render('homepage')
 })
 
+app.get('/cart', (req, res) => {
+
+    res.render('customers/cart')
+})
+
+app.get('/login', (req, res) => {
+
+    res.render('auth/login')
+})
+app.get('/register', (req, res) => {
+
+    res.render('auth/register')
+})
+
 app.listen(3000, () => {
 
     console.log('App is running on port 3000')
